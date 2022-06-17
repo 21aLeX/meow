@@ -6,11 +6,53 @@
 .container{
   
   display: flex;
+  height: 100%;
 }
 .box{
   width: 320px;
   height: 480px;
   background-color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 10%);
+}
+
+.greyTitle{
+  position: relative;
+  font-size: 16px;
+  color: #666666;
+  margin-top: 15px;
+}
+.title{
+  position: relative;
+  font-size: 48px;
+  color: #000000;
+  font-weight: bold Trebuchet MS;
+}
+
+.food{
+  width: max-content;
+  position: relative;
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold Trebuchet MS;
+ right: -65px;
+
+}
+
+.mouse{
+  text-align: left;
+  right: -65px;
+  width: max-content;
+  margin-bottom: 40px;
+}
+
+.img{
+  position: relative;
+  background-image: url('../Photo.png');
+  min-height: 60%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
 }
