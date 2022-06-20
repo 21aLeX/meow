@@ -12,6 +12,7 @@
   width: 320px;
   height: 480px;
   background-color: white;
+  overflow: hidden;
   margin: auto;
   text-align: center;
   border-radius: 10px;
@@ -45,14 +46,19 @@
   text-align: left;
   right: -65px;
   width: max-content;
-  margin-bottom: 40px;
 }
 
 .img{
-  position: relative;
+  position: absolute;
   background-image: url('../Photo.png');
-  min-height: 60%;
+  min-height: 92%;
+  min-width: 100%;
   background-repeat: no-repeat;
-  overflow: hidden;
+  bottom: 0;
+
+}
+.boxImg{
+  position: relative;
+  height: 62%;
 
 }
