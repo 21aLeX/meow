@@ -28,7 +28,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+        <div className='point'>.</div></div>
       </div>
         <div className='bigBox'>
         <div className='box'>
@@ -47,7 +48,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+        <div className='point'>.</div></div>
       </div>
         <div className='bigBox'>
         <div className='box'>
@@ -69,7 +71,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+        <div className='point'>.</div></div>
       </div>
       </div>
     </div>
