@@ -8,7 +8,11 @@ function App() {
 
   return (
     <div className="App">
+    <div className='catContainer'>
+      Ты сегодня покормил кота?
+      </div>
       <div className='container'>
+        <div className='bigBox'>
         <div className='box'>
           {story}
           {title}
@@ -24,6 +28,9 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+      </div>
+        <div className='bigBox'>
         <div className='box'>
           {story}
           {title}
@@ -40,6 +47,9 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+      </div>
+        <div className='bigBox'>
         <div className='box'>
           {story}
           {title}
@@ -59,6 +69,8 @@ function App() {
             </div>
           </div>
         </div>
+        <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>.</div>
+      </div>
       </div>
     </div>
   );
