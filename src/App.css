@@ -8,44 +8,33 @@
   display: flex;
   height: 100%;
 }
-.box::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0%;
-  left: 5%;
-  min-width: 100px;
-  min-height: 150px;
-  background-color: #000000;
-  background-size: contain;
-  transform: rotate(45deg);
+.shadovBox{
+  
+  width: 328px;
+  height: 488px ;
+  /* background-color:red; */
+  z-index: -117;
 }
-.box::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0%;
-  left: 5%;
-  min-width: 100px;
-  min-height: 150px;
-  background-color: #000000;
-  background-size: contain;
-  transform: rotate(45deg);
+.borderBox{
+  
+  width: 328px;
+  height: 488px ;
+  background-color: #1698D9;
+  border-radius: 15px;
+  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+
 }
-
-
 .box {
-  position: flex;
+  position: relative;
   width: 320px;
   height: 480px;
   background-color: white;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  top: 4px;
   text-align: center;
   border-radius: 10px;
-  /* clip-path: polygon(10% 0, 100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 100%, 0 10%); */
-border: solid #1698D9;
+  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
 }
 
 .greyTitle {
@@ -76,7 +65,7 @@ border: solid #1698D9;
   text-align: left;
   right: -65px;
   width: max-content;
-  height: 75px;
+  height: 78px;
 }
 
 .img {
@@ -120,8 +109,8 @@ border: solid #1698D9;
 .bigBox{
   margin: auto;
 }
-.happy{ position: relative;
-  margin-top: 10px;
+.happy{ 
+  position: relative;
   text-align: center;
   color: white;
   height: max-content;
@@ -132,11 +121,13 @@ a{
   text-decoration: none;
   border-bottom: 1px dashed #1698D9
 }
+
 .point{
-  color: #1698D9;
-  width: max-content;
-  height: max-content;
-  margin: 0;
-  position: relative;
   display: inline;
+  max-width: max-content;
+  color: #1698D9;
+
+}
+.pinck{
+  background-color: #E52E7A;
 }
