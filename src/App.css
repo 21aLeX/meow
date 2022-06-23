@@ -117,11 +117,6 @@
   height: max-content;
   
 }
-a{
-  color: #1698D9;
-  text-decoration: none;
-  border-bottom: 1px dashed #1698D9
-}
 
 .point{
   display: inline;
@@ -131,4 +126,10 @@ a{
 }
 .pinck{
   background-color: #E52E7A;
+}
+.buy{
+  width: max-content;
+  display: inline;
+  color: #1698D9;
+  border-bottom: 1px dashed #1698D9
 }

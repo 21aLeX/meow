@@ -1,5 +1,5 @@
 import { click } from '@testing-library/user-event/dist/click';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useMemo } from 'react';
 import './App.css';
 
@@ -8,24 +8,21 @@ function App() {
   const story = <div className='story greyTitle'>Сказочное заморское явство</div>
   const title = <div className='title'>Нямушка</div>
   const circle = <div className='circle'></div>
-  let borderBox = 'borderBox'
   let id = ''
-  function clickBuy(e) {
-    console.log(e)
+  let id2 = ''
+  function clickBuy(e, e2) {
     id = e
+    id2 = e2
+    console.log(id+' '+id2)
   }
-  function outBuy(){
-    if(id){
-    console.log('ушел')
-    // const element = document.getElementById(id)
-    borderBox = 'pinck'
-    // document.getElementById("id").className+='pinck'
-  id=''
+  function outBuy() {
+    if (id) {
+      document.getElementById(id).classList.toggle('pinck')
+      document.getElementById(id2).classList.toggle('pinck')
+    }
+      id = ''
+      id2=''
   }
-  }
-  useMemo(()=>{
-console.log(borderBox)
-  },[id])
 
   return (
     <div className="App">
@@ -34,12 +31,12 @@ console.log(borderBox)
       </div>
       <div className='container'>
         <div className='bigBox'>
-          <div id='1' className='shadovBox'
-           onClick={e => clickBuy(e.target.id)}
-          onMouseOut={outBuy}
-           >
+          <div className='shadovBox'
+            onClick={()=>clickBuy(1, 11)}
+            onMouseOut={()=>outBuy()}
+          >
           </div>
-          <div className={borderBox}>
+          <div id='1' className='borderBox'>
             <div className='box'>
               {story}
               {title}
@@ -49,18 +46,26 @@ console.log(borderBox)
                 мышь в подарок</div>
 
               <div className='img'>
-                <div className='circle'>
+                <div id='11' className='circle'>
                   <div className='textKg'>0,5
                     <div className='Kg'>кг</div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+          <div className='happy'>Чего сидишь? Порадуй котэ, <div className='buy'
+            onClick={()=>clickBuy(1, 11)}
+            onMouseOut={()=>outBuy()}
+            >купи</div>
             <div className='point'>.</div></div>
         </div>
         <div className='bigBox'>
-          <div className='borderBox'>
+          <div className='shadovBox'
+            onClick={()=>clickBuy(2, 22)}
+            onMouseOut={()=>outBuy()}
+          >
+          </div>
+          <div id='2' className='borderBox'>
             <div className='box'>
               {story}
               {title}
@@ -70,7 +75,7 @@ console.log(borderBox)
                 2 мыши в подарок</div>
 
               <div className='img'>
-                <div className='circle'>
+                <div id='22' className='circle'>
                   <div className='textKg'>2
                     <br />
                     <div className='Kg'>кг</div></div>
@@ -78,34 +83,43 @@ console.log(borderBox)
               </div>
             </div>
           </div>
-          <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+          <div className='happy'>Чего сидишь? Порадуй котэ, <div className='buy'
+            onClick={()=>clickBuy(2, 22)}
+            onMouseOut={()=>outBuy()}
+            >купи</div>
             <div className='point'>.</div></div>
         </div>
         <div className='bigBox'>
-          <div className='shadovBox'>
-            <div className='borderBox'>
-              <div className='box'>
-                {story}
-                {title}
-                <div className='food'>с курой</div>
-                <div className='mouse greyTitle'>100 порций
-                  <br />
-                  5 мышей в подарок
-                  <br />
-                  заказчик доволен
-                </div>
+          <div className='shadovBox'
+            onClick={()=>clickBuy(3, 33)}
+            onMouseOut={()=>outBuy()}
+          >
+          </div>
+          <div id='3' className='borderBox'>
+            <div className='box'>
+              {story}
+              {title}
+              <div className='food'>с курой</div>
+              <div className='mouse greyTitle'>100 порций
+                <br />
+                5 мышей в подарок
+                <br />
+                заказчик доволен
+              </div>
 
-                <div className='img'>
-                  <div className='circle'>
-                    <div className='textKg'>5
-                      <br />
-                      <div className='Kg'>кг</div></div>
-                  </div>
+              <div className='img'>
+                <div id='33' className='circle'>
+                  <div className='textKg'>5
+                    <br />
+                    <div className='Kg'>кг</div></div>
                 </div>
               </div>
             </div>
           </div>
-          <div className='happy'>Чего сидишь? Порадуй котэ, <a href='1'>купи</a>
+          <div className='happy'>Чего сидишь? Порадуй котэ, <div className='buy'
+            onClick={()=>clickBuy(3, 33)}
+            onMouseOut={()=>outBuy()}
+            >купи</div>
             <div className='point'>.</div></div>
         </div>
       </div>
