@@ -9,11 +9,12 @@
   height: 100%;
 }
 .shadovBox{
-  
+  position: absolute;
   width: 328px;
   height: 488px ;
   /* background-color:red; */
-  z-index: -117;
+  clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
+  z-index: 10017;
 }
 .borderBox{
   
