@@ -2,6 +2,7 @@ import { click } from '@testing-library/user-event/dist/click';
 import { useEffect, useState } from 'react';
 import { useMemo } from 'react';
 import './App.css';
+import Title from './components/Title';
 
 function App() {
 
@@ -26,9 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className='catContainer'>
-        Ты сегодня покормил кота?
-      </div>
+      <Title/>
       <div className='container'>
         <div className='bigBox'>
           <div className='shadovBox'
