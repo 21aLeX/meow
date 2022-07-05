@@ -2,6 +2,8 @@ import { click } from '@testing-library/user-event/dist/click';
 import { useEffect, useState } from 'react';
 import { useMemo } from 'react';
 import './App.css';
+import BigBox from './components/BigBox';
+import Card from './components/Card';
 import Title from './components/Title';
 
 function App() {
@@ -32,6 +34,9 @@ function App() {
     <div className="App">
       <Title/>
       <div className='container'>
+        <Card Id={['1','11']} Name='с фуа-гра' portion='10 порций' mouse='мышь в подарок'
+        happy=''
+        />
         <div className='bigBox'>
           <div className='shadovBox'
             onClick={()=>clickBuy(1, 11)}
