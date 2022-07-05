@@ -112,6 +112,8 @@
 }
 .happy{ 
   position: relative;
+  margin-top: 10px;
+  font-size: 14px;
   text-align: center;
   color: white;
   height: max-content;
@@ -132,4 +134,8 @@
   display: inline;
   color: #1698D9;
   border-bottom: 1px dashed #1698D9
+}
+
+.disabled{
+  display: none;
 }

@@ -20,7 +20,10 @@ function App() {
     if (id) {
       document.getElementById(id).classList.toggle('pinck')
       document.getElementById(id2).classList.toggle('pinck')
+      document.getElementById(id).nextElementSibling.classList.toggle('disabled')
+      document.getElementById(id).nextElementSibling.nextElementSibling.classList.toggle('disabled')
     }
+    
       id = ''
       id2=''
   }
@@ -52,11 +55,15 @@ function App() {
               </div>
             </div>
           </div>
-          <div className='happy'>Чего сидишь? Порадуй котэ, <div className='buy'
+          <div className='happy'>
+            Чего сидишь? Порадуй котэ, <div className='buy'
             onClick={()=>clickBuy(1, 11)}
             onMouseOut={()=>outBuy()}
             >купи</div>
             <div className='point'>.</div></div>
+            <div className='happy disabled'>
+            Печень утки разварная с артишоками.
+            </div>
         </div>
         <div className='bigBox'>
           <div className='shadovBox'
@@ -87,6 +94,9 @@ function App() {
             onMouseOut={()=>outBuy()}
             >купи</div>
             <div className='point'>.</div></div>
+            <div className='happy disabled'>
+            Головы щучьи с чесноком да свежайшая сёмгушка.
+            </div>
         </div>
         <div className='bigBox'>
           <div className='shadovBox'
@@ -120,6 +130,9 @@ function App() {
             onMouseOut={()=>outBuy()}
             >купи</div>
             <div className='point'>.</div></div>
+            <div className='happy disabled'>
+            Филе из цыплят с трюфелями в бульоне.
+            </div>
         </div>
       </div>
     </div>
