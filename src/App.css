@@ -4,27 +4,26 @@
 }
 
 .container {
-
   display: flex;
   height: 100%;
 }
-.shadovBox{
+
+.shadovBox {
   position: absolute;
   width: 328px;
-  height: 488px ;
-  /* background-color:red; */
+  height: 488px;
   clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
   z-index: 10017;
 }
-.borderBox{
-  
+
+.borderBox {
   width: 328px;
-  height: 488px ;
+  height: 488px;
   background-color: #1698D9;
   border-radius: 15px;
   clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%, 0 9%);
-
 }
+
 .box {
   position: relative;
   width: 320px;
@@ -59,7 +58,6 @@
   color: #000000;
   font-weight: bold Trebuchet MS;
   right: -65px;
-
 }
 
 .mouse {
@@ -86,7 +84,8 @@
   left: 70%;
   text-align: center;
 }
-.textKg{
+
+.textKg {
   text-align: center;
   width: 100%;
   color: white;
@@ -97,45 +96,48 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.Kg{
+.Kg {
   font-size: 25px;
 }
-.catContainer{
+
+.catContainer {
   text-align: center;
   color: white;
   font-weight: lighter;
   font-family: initial;
   font-size: 40px;
 }
-.bigBox{
+
+.bigBox {
   margin: auto;
 }
-.happy{ 
+
+.happy {
   position: relative;
   margin-top: 10px;
   font-size: 14px;
   text-align: center;
   color: white;
   height: max-content;
-  
 }
 
-.point{
+.point {
   display: inline;
   max-width: max-content;
   color: #1698D9;
-
 }
-.pinck{
+
+.pinck {
   background-color: #E52E7A;
 }
-.buy{
+
+.buy {
   width: max-content;
   display: inline;
   color: #1698D9;
   border-bottom: 1px dashed #1698D9
 }
 
-.disabled{
+.disabled {
   display: none;
 }
